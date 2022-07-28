@@ -3,6 +3,10 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../components/icon_content.dart';
 import '../components/reusable_card.dart';
 import '../constants.dart';
+import 'package:bmi_calculator/screens/results_page.dart';
+import 'package:bmi_calculator/components/bottom_button.dart';
+import 'package:bmi_calculator/components/round_icon_button.dart';
+import 'package:bmi_calculator/calculator_brain.dart';
 
 enum Gender {
   male,
@@ -139,7 +143,6 @@ class _InputPageState extends State<InputPage> {
                             ),
                           ],
                         ),
-
                       ],
                     ),
                   ),
@@ -161,7 +164,6 @@ class _InputPageState extends State<InputPage> {
 }
 
 class RoundIconButton extends StatelessWidget {
-
   RoundIconButton({this.icon});
 
   final IconData icon;
@@ -182,4 +184,3 @@ class RoundIconButton extends StatelessWidget {
     );
   }
 }
-
